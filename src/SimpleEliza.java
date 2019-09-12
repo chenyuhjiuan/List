@@ -6,11 +6,11 @@ public class SimpleEliza {
         Scanner keyb= new Scanner(System.in);
         String answer;
         boolean quit=false;
-        System.out.println("Welcome to our clinic!");
+        System.out.println("Welcome to Dr. Chen's clinic!");
 
         while(!quit){
 
-            System.out.printf("What is your problem?");
+            System.out.println("What is your problem?");
             answer= keyb.next();
             if((answer.equalsIgnoreCase("I am feeling good"))||(answer.equalsIgnoreCase("q"))){
                 quit=true;
@@ -20,6 +20,6 @@ public class SimpleEliza {
 
 
         }
-
+        System.out.println("\nThank you for your time.");
     }
 }
