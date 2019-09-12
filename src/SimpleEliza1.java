@@ -2,20 +2,23 @@ import java.util.Scanner;
 
 public class SimpleEliza1 {
 
-    public static void main(String[] args) {
-
-        Scanner kb = new Scanner(System.in);
+    public static void main(String arg[]){
+        Scanner keyb= new Scanner(System.in);
         String answer;
-        boolean quit = false;
-        System.out.println("\nWelcome to Dr. Chen's clinic.");
+        boolean quit=false;
+        System.out.println("Welcome to Dr. Chen's clinic!");
 
-        while (quit == false) {
-            System.out.println("\nWhat is your problem? ");
-            answer = kb.nextLine();
+        while(!quit){
 
-            if ((answer.equalsIgnoreCase("I am feeling great")) || (answer.equalsIgnoreCase("q"))){
-                quit = true;
+            System.out.println("What is your problem?");
+            answer= keyb.next();
+            if((answer.equalsIgnoreCase("I am feeling good"))||(answer.equalsIgnoreCase("q"))){
+                quit=true;
             }
+
+
+
+
         }
         System.out.println("\nThank you for your time.");
     }

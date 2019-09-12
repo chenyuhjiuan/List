@@ -18,7 +18,7 @@ public class IntermediateEliza {
         replacements.put("am", "are");*/
 
 
-        System.out.println("\nWelcome to Intermediate Eliza");
+        System.out.println("\nWelcome to Dr. Chen's clinic.");
 
         while (true) {
             System.out.println("\nWhat is your problem? ");
