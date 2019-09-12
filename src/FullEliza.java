@@ -1,59 +1,53 @@
+import java.util.HashMap;
+import java.util.Random;
 import java.util.Scanner;
 
 public class FullEliza {
 
-    public static void main(String arg[]){
+    public static void main(String[] args) {
 
         Scanner kb = new Scanner(System.in);
-//        HashMap<String, String> replacements = new HashMap<>();
-        String answer;
+        String[] hedges = new String[] {"Please tell me more", "Many of my patients tell me the same thing", "It is getting late, maybe we had better quit"};
+        String[] qualifiers = new String[] {"Why do you say that ", "You seem to think that ", "So, you are concerned that "};
+        String user, therapist;
         String[] splitAnswer;
-        String therapist;
+        boolean anyReplacementMade;
 
-        /*replacements.put("i", "you");
+        HashMap<String, String> replacements = new HashMap<>();
+        replacements.put("i", "you");
         replacements.put("me", "you");
         replacements.put("my", "your");
-        replacements.put("am", "are");*/
+        replacements.put("am", "are");
 
-
-        System.out.println("\nWelcome to Intermediate Eliza");
+        System.out.println("Welcome to Dr. Chen's clinic");
+        System.out.println("What is your problem? ");
 
         while (true) {
-            System.out.println("\nWhat is your problem? ");
-            answer = kb.nextLine();
-            answer = answer.toLowerCase();
-            if (answer.equals("q"))
+            anyReplacementMade = false;
+            user = kb.nextLine();
+            user = user.toLowerCase();
+            if (user.equals("q"))
                 break;
 
-            splitAnswer = answer.split(" ");
+            splitAnswer = user.split(" ");
 
-            for (int i = 0; i < splitAnswer.length; i++){
-                /*if (replacements.containsKey(splitAnswer[i]))
-                    splitAnswer[i] = replacements.get(splitAnswer[i]);*/
-
-                if ((splitAnswer[i]).equals("i")){
-                    splitAnswer[i] = "you";
-                }
-                if ((splitAnswer[i]).equals("me")){
-                    splitAnswer[i] = "you";
-                }
-                if ((splitAnswer[i]).equals("my")){
-                    splitAnswer[i] = "your";
-                }
-                if ((splitAnswer[i]).equals("am")){
-                    splitAnswer[i] = "are";
+            for (int i = 0; i < splitAnswer.length; i++) {
+                if (replacements.containsKey(splitAnswer[i])) {
+                    splitAnswer[i] = replacements.get(splitAnswer[i]);
+                    anyReplacementMade = true;
                 }
             }
 
-            therapist = "Why do you say that ";
-            for (String word : splitAnswer){
-                therapist = therapist.concat(word + " ");
-            }
-            therapist = therapist.concat("?");
+            if (anyReplacementMade) {
+                therapist = qualifiers[new Random().nextInt(3)];
+                for (String word : splitAnswer)
+                    therapist = therapist.concat(word + " ");
+            } else
+                therapist = hedges[new Random().nextInt(3)];
+
             System.out.println(therapist);
         }
-        System.out.println("Bye");
 
-
+        System.out.println("Good bye!");
     }
 }

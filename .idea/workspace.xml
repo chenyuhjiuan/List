@@ -46,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IntermediateEliza.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
@@ -58,11 +58,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FullEliza.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1350">
-              <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+            <state relative-caret-position="129">
+              <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,10 +86,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ReplplacementString.java" />
-        <option value="$PROJECT_DIR$/src/FullEliza.java" />
         <option value="$PROJECT_DIR$/src/SimpleEliza1.java" />
         <option value="$PROJECT_DIR$/src/SimpleEliza.java" />
         <option value="$PROJECT_DIR$/src/IntermediateEliza.java" />
+        <option value="$PROJECT_DIR$/src/FullEliza.java" />
       </list>
     </option>
   </component>
@@ -142,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SimpleEliza">
+  <component name="RunManager" selected="Application.FullEliza">
     <configuration name="FullEliza" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FullEliza" />
       <module name="List" />
@@ -180,9 +183,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FullEliza" />
         <item itemvalue="Application.SimpleEliza" />
         <item itemvalue="Application.SimpleEliza1" />
-        <item itemvalue="Application.FullEliza" />
         <item itemvalue="Application.IntermediateEliza" />
         <item itemvalue="Application.ReplplacementString" />
       </list>
@@ -198,12 +201,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568295463256</updated>
-      <workItem from="1568295470897" duration="5687000" />
+      <workItem from="1568295470897" duration="7495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5687000" />
+    <option name="totallyTimeSpent" value="7495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -247,13 +250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FullEliza.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1350">
-          <caret line="54" column="34" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SimpleEliza1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -272,6 +268,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FullEliza.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
